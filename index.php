@@ -21,7 +21,7 @@
     $result = $conn -> query($sql);
     
     if ($result-> num_rows > 0){
-     while ($row = $result ->fect_assoc()){
+    while ($row = $result->fetch_assoc()) {
      echo"<li>";
      echo $row['status'] == 'concluida'?"<s>{row['title']}</s>":$row['title'];
      echo"
